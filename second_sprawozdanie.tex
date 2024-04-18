@@ -29,7 +29,7 @@
 \section{Cel projektu}
 \indent\indent Celem poprzedniej części zadania było stworzenie programu umożliwiającego generowanie sygnałów z zadaną częstotliwością próbkowania oraz implementacja podstawowych operacji pozwalających na generowanie nowego sygnału na podstawie 2 sygnałów bazowych. Dodatkowym celem było stworzenie interfejsu użytkownika oraz wizualizacji w postaci wykresów wraz z podsumowaniem prezentującym podstawowe wartości opisujące sygnał.
 \newline
-\indent Celem bieżącej części zadania jest dodanie do aplikacji funkcjonalności pozwalających na kwantyzację i rekonstrukcję sygnału przy użyciu różnych metod interpolacji. Wpływ parametrów przetwarzania A/C i C/A zostanie zostanie zbadany w sekcji analizy wyników (??). 
+\indent Celem bieżącej części zadania jest dodanie do aplikacji funkcjonalności pozwalających na kwantyzację i rekonstrukcję sygnału przy użyciu różnych metod interpolacji. Wpływ parametrów przetwarzania A/C i C/A zostanie zostanie zbadany w sekcji analizy wyników. 
 
 \section{Instrukcja korzystania z aplikacji}
 \indent\indent W pierwszej części zadania, użytkownik korzysta z podwójnego menu pozwalającego na modyfikowanie parametrów wybranego typu sygnału - dostępnne menu dla sygnału A oraz menu dla sygnału B. Dla obu sygnałów użytkownik korzysta z odpowiedniego dla sygnału okna przewijanego zawierającego w pierwszej kolejności wykres wartości sygnału w zależności od czasu, a następnie histogram prezentujący dla ilu próbek sygnału, jego wartość znajdowała się w określonych przedziałach. Możliwe jest ustawienie z osobna dla obu sygnałów rozdzielczości histogramu przy użyciu suwaka. Poniżej suwaka znajduje się podsumowanie zawierające obliczoną średnią wartością sygnału, średnią wartością bezwzględną sygnału, średnią mocą sygnału, wariancją i wartością skuteczną sygnału. 
@@ -208,6 +208,8 @@ Wykorzystano interpolację zero-hold, a także rekonstrukcję z wykorzystaniem z
 \label{table:zero_hold_sampling}
 \end{table}
 
+- Liniowe zwiększanie częstotliwości próbkowania wiąże się coraz wolniejszym zbliżaniem się wartości MSE oraz MD ku zeru. Wartości SNR oraz i PNSR rosną zaś w niejednorodnym tempie.
+
 \subsubsection{Rekonstrukcja z użyciemm funkcji $sinc$}
 \begin{table}[H]
 \centering
@@ -227,6 +229,12 @@ Wykorzystano interpolację zero-hold, a także rekonstrukcję z wykorzystaniem z
 \caption{Miary podobieństwa sygnału dyskretnego i sygnału zrekonstruowanego dla różnych wartości częstotliwości próbkowania $f_s$ i dla różnych wartości parametru współczynnika liczby próbek branych do rekonstrukcji z użyciem znormalizowanej funkcji $sinc$.}
 \label{table:sinc_sampling}
 \end{table}
+
+- Większa liczba próbek użytych w rekonstrukcji z użyciem znormalizowanego $sinc$, wiąże się z większą dokładnością interpolacji sygnału
+\newline
+\indent- Wraz ze wzrostem częstotliwości próbkowania sygnału, przy zachowaniu stałej liczby próbek przy rekonstrukcji, wartości SNR oraz PSNR rosną
+\newline
+\indent- Już przy bardzo niskich liczbach próbek używanych do rekonstrukcji sygnału z użyciem normalizowanego $sinc$, dokładność interolacji jest na tyle duża, że wartości MSE oraz MD są bliskie 0 przy przyjętej precyzji przedstawionych wyników.
 
 \subsection{Analiza - kwantyzacja}
 Wykorzystano kwantyzację równomierną z obcięciem.
@@ -250,6 +258,41 @@ Wykorzystano kwantyzację równomierną z obcięciem.
 \caption{Miary podobieństwa sygnału zkwantyzowanego i sygnału oryginalnego dla różnych wartości progu kwantyzacji oraz wartości współczynnika $effective$-$number$-$of$- $bits$. }
 \label{table:quant}
 \end{table}
+
+- Kwantyzacja powoduje utratę jakości sygnału, odpowiednio niskim progu kwantyzacji, efekt ten jest pomijalny
+\newline
+\indent- Liniowe zwiększanie progu kwantyzacji wiąże się z coraz wolniejszym spadkiem wartości $SNR$, $PSNR$, $ENOB$, a także liniowym wzrostem $MD$. 
+
+\subsection{Analiza - zjawisko aliasingu}
+\subsubsection{$f_0 = 100Hz$ i $f_s = 1000Hz$}
+$f_d = 1100Hz$
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=14cm]{aliasing1.png}
+ \vspace{-0.3cm}
+ \caption{Aliasing 1}
+ \label{fig:al1}
+\end{figure}
+
+\subsubsection{$f_0 = 440Hz$ i $f_s = 22050Hz$}
+$f_d = 22490Hz$
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=14cm]{aliasing2.png}
+ \vspace{-0.3cm}
+ \caption{Aliasing 2}
+ \label{fig:al2}
+\end{figure}
+
+\subsubsection{$f_0 = 220Hz$ i $f_s = 44100Hz$}
+$f_d = 44320Hz$
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=14cm]{aliasing3.png}
+ \vspace{-0.3cm}
+ \caption{Aliasing 3}
+ \label{fig:al3}
+\end{figure}
 
 \begin{thebibliography}{0}
 \bibitem{gtk3_link} GTK3, strona projektu, https://docs.gtk.org/gtk3/
