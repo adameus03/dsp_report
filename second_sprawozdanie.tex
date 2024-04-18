@@ -185,7 +185,7 @@ Dodanie dodatniego sygnału stałego do szumu gaussowskiego powoduje przesunięc
 \section{Przykłady i wnioski z analizy działania programu - część 2}
 W ramach przykładu, analizy dokonano dla funkcji będącej sumą 2 funkcji sinusoidalnych o różnych częstotliwościach: $f(x) = sin(2\pi t) + sin(8\pi t)$. Przyjęto przybliżenie sygnału analogowego z wykorzystaniem częstotliwości próbkowania $250000$.
 \subsection{Analiza - próbkowanie}
-Wykorzystano interpolację zero-hold, a także rekonstrukcję z wykorzystaniem funkcji $sinus$ $cardinalis$.
+Wykorzystano interpolację zero-hold, a także rekonstrukcję z wykorzystaniem znormalizowanej funkcji $sinus$ $cardinalis$.
 \subsubsection{Interpolacja zero-hold}
 \begin{table}[H]
 \centering
@@ -224,12 +224,32 @@ Wykorzystano interpolację zero-hold, a także rekonstrukcję z wykorzystaniem f
  50 & 10 & 0.000 & 89.120 & 94.705 & 0.000 \\
  \hline
 \end{tabular}
-\caption{Miary podobieństwa sygnału dyskretnego i sygnału zrekonstruowanego dla różnych wartości częstotliwości próbkowania $f_s$.}
+\caption{Miary podobieństwa sygnału dyskretnego i sygnału zrekonstruowanego dla różnych wartości częstotliwości próbkowania $f_s$ i dla różnych wartości parametru współczynnika liczby próbek branych do rekonstrukcji z użyciem znormalizowanej funkcji $sinc$.}
 \label{table:sinc_sampling}
 \end{table}
 
 \subsection{Analiza - kwantyzacja}
 Wykorzystano kwantyzację równomierną z obcięciem.
+\begin{table}[H]
+\centering
+\begin{tabular}{|c | c | c | c | c | c|}
+ \hline
+ $quant.\text{ }threshold$ & $MSE$ & $SNR$ & $PSNR$ & $MD$ & $ENOB$\\
+ \hline
+ 0.05 & 0.001 & 30.854 & 36.557 & 0.050 & 4.833 \\
+ \hline
+ 0.10 & 0.003 & 24.898 & 30.601 & 0.100 & 3.843 \\
+ \hline
+ 0.15 & 0.007 & 21.439 & 27.142 & 0.150 & 3.269 \\
+ \hline
+ 0.20 & 0.013 & 18.809 & 24.512 & 0.200 & 2.832 \\
+ \hline
+ 0.25 & 0.019 & 17.230 & 23.003 & 0.250 & 2.581 \\
+ \hline
+\end{tabular}
+\caption{Miary podobieństwa sygnału zkwantyzowanego i sygnału oryginalnego dla różnych wartości progu kwantyzacji oraz wartości współczynnika $effective$-$number$-$of$- $bits$. }
+\label{table:quant}
+\end{table}
 
 \begin{thebibliography}{0}
 \bibitem{gtk3_link} GTK3, strona projektu, https://docs.gtk.org/gtk3/
