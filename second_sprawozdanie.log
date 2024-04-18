@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.3.10)  18 APR 2024 07:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.3.10)  18 APR 2024 07:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -161,42 +161,50 @@ Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \titlewidthlast=\dimen156
 \titlewidthfirst=\dimen157
 )
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count273
+\float@exts=\toks25
+\float@box=\box54
+\@float@everytoks=\toks26
+\@floatcapt=\box55
+)
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count273
-\l__pdf_internal_box=\box54
+\l__color_backend_stack_int=\count274
+\l__pdf_internal_box=\box56
 )
 (./second_sprawozdanie.aux)
 \openout1 = `second_sprawozdanie.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count274
+\scratchcounter=\count275
 \scratchdimen=\dimen158
-\scratchbox=\box55
-\nofMPsegments=\count275
-\nofMParguments=\count276
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count277
+\scratchbox=\box57
+\nofMPsegments=\count276
+\nofMParguments=\count277
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count278
 \MPscratchDim=\dimen159
-\MPnumerator=\count278
-\makeMPintoPDFobject=\count279
-\everyMPtoPDFconversion=\toks26
+\MPnumerator=\count279
+\makeMPintoPDFobject=\count280
+\everyMPtoPDFconversion=\toks28
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -206,13 +214,13 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -223,37 +231,37 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <gui2.png, id=10, 1857.94125pt x 1066.98625pt>
 File: gui2.png Graphic file (type png)
 <use gui2.png>
-Package pdftex.def Info: gui2.png  used on input line 42.
+Package pdftex.def Info: gui2.png  used on input line 43.
 (pdftex.def)             Requested size: 398.33858pt x 228.76262pt.
 
-Overfull \hbox (53.33858pt too wide) in paragraph at lines 42--44
+Overfull \hbox (53.33858pt too wide) in paragraph at lines 43--45
  [][] 
  []
 
 
-Overfull \hbox (4.84795pt too wide) in paragraph at lines 48--48
+Overfull \hbox (4.84795pt too wide) in paragraph at lines 49--49
 |[]\T1/cmr/bx/n/14.4 Opis im-ple-men-ta-cji oraz me-tod ge-ne-ro-wa-nia da-
  []
 
 [2 <./gui2.png>]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 5
-3.
+4.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
-Overfull \hbox (1.4154pt too wide) in paragraph at lines 56--56
+Overfull \hbox (1.4154pt too wide) in paragraph at lines 57--57
 []\T1/cmtt/m/n/10 gnuplot -e "max=1." -e "min=-1." -e "n=10" -e "outfile='foo.p
 ng'"\[] 
  []
 
 
-Overfull \hbox (17.16156pt too wide) in paragraph at lines 56--56
+Overfull \hbox (17.16156pt too wide) in paragraph at lines 57--57
 []\T1/cmtt/m/n/10 -e "infile='data.txt'" -e "plottitle='Signal A histogram'" sc
 ript.plt[] 
  []
 
 
-Overfull \hbox (38.15643pt too wide) in paragraph at lines 97--97
+Overfull \hbox (38.15643pt too wide) in paragraph at lines 98--98
 [] \T1/cmtt/m/n/10 * Uses Marsaglia polar method and rand() to generate a stand
 ard-normally[] 
  []
@@ -262,10 +270,10 @@ ard-normally[]
 <sine_config.png, id=22, 670.505pt x 278.03876pt>
 File: sine_config.png Graphic file (type png)
 <use sine_config.png>
-Package pdftex.def Info: sine_config.png  used on input line 104.
+Package pdftex.def Info: sine_config.png  used on input line 105.
 (pdftex.def)             Requested size: 398.33858pt x 165.17844pt.
 
-Overfull \hbox (53.33858pt too wide) in paragraph at lines 104--106
+Overfull \hbox (53.33858pt too wide) in paragraph at lines 105--107
  [][] 
  []
 
@@ -273,10 +281,10 @@ Overfull \hbox (53.33858pt too wide) in paragraph at lines 104--106
 <sine_plot.png, id=27, 793.96625pt x 629.35126pt>
 File: sine_plot.png Graphic file (type png)
 <use sine_plot.png>
-Package pdftex.def Info: sine_plot.png  used on input line 112.
+Package pdftex.def Info: sine_plot.png  used on input line 113.
 (pdftex.def)             Requested size: 398.33858pt x 315.76001pt.
 
-Overfull \hbox (53.33858pt too wide) in paragraph at lines 112--114
+Overfull \hbox (53.33858pt too wide) in paragraph at lines 113--115
  [][] 
  []
 
@@ -284,10 +292,10 @@ Overfull \hbox (53.33858pt too wide) in paragraph at lines 112--114
 <sine_histosum.png, id=31, 809.0225pt x 644.4075pt>
 File: sine_histosum.png Graphic file (type png)
 <use sine_histosum.png>
-Package pdftex.def Info: sine_histosum.png  used on input line 120.
+Package pdftex.def Info: sine_histosum.png  used on input line 121.
 (pdftex.def)             Requested size: 398.33858pt x 317.28653pt.
 
-Overfull \hbox (53.33858pt too wide) in paragraph at lines 120--122
+Overfull \hbox (53.33858pt too wide) in paragraph at lines 121--123
  [][] 
  []
 
@@ -295,10 +303,10 @@ Overfull \hbox (53.33858pt too wide) in paragraph at lines 120--122
 <gauss_config.png, id=36, 724.7075pt x 277.035pt>
 File: gauss_config.png Graphic file (type png)
 <use gauss_config.png>
-Package pdftex.def Info: gauss_config.png  used on input line 132.
+Package pdftex.def Info: gauss_config.png  used on input line 133.
 (pdftex.def)             Requested size: 398.33858pt x 152.27672pt.
 
-Overfull \hbox (53.33858pt too wide) in paragraph at lines 132--134
+Overfull \hbox (53.33858pt too wide) in paragraph at lines 133--135
  [][] 
  []
 
@@ -306,10 +314,10 @@ Overfull \hbox (53.33858pt too wide) in paragraph at lines 132--134
 <gauss_plot.png, id=40, 803.0pt x 637.38126pt>
 File: gauss_plot.png Graphic file (type png)
 <use gauss_plot.png>
-Package pdftex.def Info: gauss_plot.png  used on input line 140.
+Package pdftex.def Info: gauss_plot.png  used on input line 141.
 (pdftex.def)             Requested size: 398.33858pt x 316.19035pt.
 
-Overfull \hbox (53.33858pt too wide) in paragraph at lines 140--142
+Overfull \hbox (53.33858pt too wide) in paragraph at lines 141--143
  [][] 
  []
 
@@ -317,10 +325,10 @@ Overfull \hbox (53.33858pt too wide) in paragraph at lines 140--142
 <gauss_histosum.png, id=44, 833.1125pt x 642.4pt>
 File: gauss_histosum.png Graphic file (type png)
 <use gauss_histosum.png>
-Package pdftex.def Info: gauss_histosum.png  used on input line 148.
+Package pdftex.def Info: gauss_histosum.png  used on input line 149.
 (pdftex.def)             Requested size: 398.33858pt x 307.15263pt.
 
-Overfull \hbox (53.33858pt too wide) in paragraph at lines 148--150
+Overfull \hbox (53.33858pt too wide) in paragraph at lines 149--151
  [][] 
  []
 
@@ -328,10 +336,10 @@ Overfull \hbox (53.33858pt too wide) in paragraph at lines 148--150
 <add_plotconfig.png, id=48, 1840.8775pt x 1000.73875pt>
 File: add_plotconfig.png Graphic file (type png)
 <use add_plotconfig.png>
-Package pdftex.def Info: add_plotconfig.png  used on input line 159.
+Package pdftex.def Info: add_plotconfig.png  used on input line 160.
 (pdftex.def)             Requested size: 398.33858pt x 216.5442pt.
 
-Overfull \hbox (53.33858pt too wide) in paragraph at lines 159--161
+Overfull \hbox (53.33858pt too wide) in paragraph at lines 160--162
  [][] 
  []
 
@@ -339,10 +347,10 @@ Overfull \hbox (53.33858pt too wide) in paragraph at lines 159--161
 <shifted_gauss.png, id=52, 805.0075pt x 924.45375pt>
 File: shifted_gauss.png Graphic file (type png)
 <use shifted_gauss.png>
-Package pdftex.def Info: shifted_gauss.png  used on input line 167.
+Package pdftex.def Info: shifted_gauss.png  used on input line 168.
 (pdftex.def)             Requested size: 398.33858pt x 457.4438pt.
 
-Overfull \hbox (53.33858pt too wide) in paragraph at lines 167--169
+Overfull \hbox (53.33858pt too wide) in paragraph at lines 168--170
  [][] 
  []
 
@@ -350,34 +358,36 @@ Overfull \hbox (53.33858pt too wide) in paragraph at lines 167--169
 <shifted_gauss_hist.png, id=56, 851.18pt x 651.43375pt>
 File: shifted_gauss_hist.png Graphic file (type png)
 <use shifted_gauss_hist.png>
-Package pdftex.def Info: shifted_gauss_hist.png  used on input line 175.
+Package pdftex.def Info: shifted_gauss_hist.png  used on input line 176.
 (pdftex.def)             Requested size: 398.33858pt x 304.8618pt.
 
-Overfull \hbox (53.33858pt too wide) in paragraph at lines 175--177
+Overfull \hbox (53.33858pt too wide) in paragraph at lines 176--178
  [][] 
  []
 
-[13 <./shifted_gauss_hist.png>] [14] (./second_sprawozdanie.aux) ) 
+[13 <./shifted_gauss_hist.png>] [14] [15] (./second_sprawozdanie.aux) ) 
 Here is how much of TeX's memory you used:
- 3865 strings out of 476091
- 60857 string characters out of 5794081
- 1859330 words of memory out of 5000000
- 24205 multiletter control sequences out of 15000+600000
+ 3942 strings out of 476091
+ 62115 string characters out of 5794081
+ 1862330 words of memory out of 5000000
+ 24278 multiletter control sequences out of 15000+600000
  524334 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,6n,62p,1279b,355s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/share/t
-exmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/public/cm
--super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb>
-</usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fo
-nts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-
-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb><
-/usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on second_sprawozdanie.pdf (14 pages, 934085 bytes).
+ 57i,9n,62p,1279b,355s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/sh
+are/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
+bx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/sha
+re/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1
+/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfr
+m1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/shar
+e/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on second_sprawozdanie.pdf (15 pages, 957216 bytes).
 PDF statistics:
- 101 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
+ 114 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

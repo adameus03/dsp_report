@@ -6,6 +6,7 @@
 \usepackage{amsfonts}
 \usepackage{graphicx}
 \usepackage{titlesec}
+\usepackage{float}
 %{Informatyka stosowana 2024, I st., semestr VI}
 
 \setcounter{secnumdepth}{4}
@@ -182,10 +183,50 @@ Metoda polarna Marsaglia jest skutecznym sposobem na otrzymanie przybliżonego s
 Dodanie dodatniego sygnału stałego do szumu gaussowskiego powoduje przesunięcie wykresu na histogramie w prawo - operacja dodawania zachodzi pomyślnie. Zaobserwować można ustalenie się wartości skutecznej oraz średniej wartości sygnału i średniej absolutnej wartości sygnału na poziomie o 10 wyższym niż w przypadku standardowego rozkładu gaussowskiego bez przesunięcia - liniowa zmiana względem przesunięcia wartości sygnału. Wariancja sygnału nie uległa zmianie względem szumu bez przesunięcia, zaś średnia moc wzrosła o kwadrat przesunięcia wartości szumu.
 
 \section{Przykłady i wnioski z analizy działania programu - część 2}
+W ramach przykładu, analizy dokonano dla funkcji będącej sumą 2 funkcji sinusoidalnych o różnych częstotliwościach: $f(x) = sin(2\pi t) + sin(8\pi t)$. Przyjęto przybliżenie sygnału analogowego z wykorzystaniem częstotliwości próbkowania $250000$.
 \subsection{Analiza - próbkowanie}
 Wykorzystano interpolację zero-hold, a także rekonstrukcję z wykorzystaniem funkcji $sinus$ $cardinalis$.
 \subsubsection{Interpolacja zero-hold}
+\begin{table}[H]
+\centering
+\begin{tabular}{|c | c | c | c | c|}
+ \hline
+ $f_s$ & $MSE$ & $SNR$ & $PSNR$ & $MD$ \\
+ \hline
+ 25 & 0.192 & 7.165 & 12.681 & 1.139 \\
+ \hline
+ 50 & 0.053 & 12.775 & 18.360 & 0.579 \\
+ \hline
+ 75 & 0.048 & 13.151 & 18.847 & 0.413 \\
+ \hline
+ 100 & 0.013 & 18.974 & 24.675 & 0.295 \\
+ \hline
+ 200 & 0.003 & 24.905 & 30.606 & 0.157 \\
+ \hline
+\end{tabular}
+\caption{Miary podobieństwa sygnału dyskretnego i sygnału zrekonstruowanego dla różnych wartości częstotliwości próbkowania $f_s$.}
+\label{table:zero_hold_sampling}
+\end{table}
+
 \subsubsection{Rekonstrukcja z użyciemm funkcji $sinc$}
+\begin{table}[H]
+\centering
+\begin{tabular}{|c | c | c | c | c | c|}
+ \hline
+ $f_s$ & $sincCountCoeff$ & $MSE$ & $SNR$ & $PSNR$ & $MD$ \\
+ \hline
+ 25 & 5 & 0.000 & 88.107 & 93.623 & 0.000 \\
+ \hline
+ 25 & 10 & 0.000 & 88.202 & 93.718 & 0.000 \\
+ \hline
+ 50 & 5 & 0.000 & 90.493 & 96.078 & 0.000 \\
+ \hline
+ 50 & 10 & 0.000 & 89.120 & 94.705 & 0.000 \\
+ \hline
+\end{tabular}
+\caption{Miary podobieństwa sygnału dyskretnego i sygnału zrekonstruowanego dla różnych wartości częstotliwości próbkowania $f_s$.}
+\label{table:sinc_sampling}
+\end{table}
 
 \subsection{Analiza - kwantyzacja}
 Wykorzystano kwantyzację równomierną z obcięciem.
